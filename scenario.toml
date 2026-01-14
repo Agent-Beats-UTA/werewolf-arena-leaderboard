@@ -1,16 +1,12 @@
 [green_agent]
-agentbeats_id = ""
-env = { API_KEY = "${GITHUB_SECRET_NAME}", LOG_LEVEL = "INFO" }
+agentbeats_id = "019bbb08-f3ad-7fa0-b150-9d62ea4c5a1b"
+image = "ghcr.io/agent-beats-uta/werewolf-arena-game-orchestrator:latest"
+env = { API_KEY = "${GITHUB_SECRET_NAME}", LOG_LEVEL = "INFO", GEMINI_API_KEY = "${GEMINI_API_KEY}"  }
 
 [[participants]]
 agentbeats_id = ""
-name = "role_1_name"
-env = {}
-
-[[participants]]
-agentbeats_id = ""
-name = "role_2_name"
+name = "participant"
 env = {}
 
 [config]
-# Add your assessment config here
+role = "werewolf"
