@@ -1,0 +1,38 @@
+{
+  "participants": {
+    "participant": "019bbf66-81af-7142-b3af-8987a98ee665"
+  },
+  "results": [
+    {
+      "winner": "werewolves",
+      "rounds_played": 2,
+      "avg_bid_per_agent": {
+        "25766350-cfb8-4b69-b1ec-96b704d815ed": 82.5,
+        "397085f2-cf27-4909-a20d-1865ce999a6c": 76.0,
+        "efc087fb-c0ff-490f-bab2-79392bec8563": 84.0,
+        "c9f5948e-a6c7-428c-8eec-6ae982f70f46": 85.0,
+        "938ad46b-8358-4e26-a101-f71c235e55db": 79.0
+      },
+      "avg_words_per_agent": {
+        "938ad46b-8358-4e26-a101-f71c235e55db": 68.0,
+        "c9f5948e-a6c7-428c-8eec-6ae982f70f46": 70.0,
+        "efc087fb-c0ff-490f-bab2-79392bec8563": 75.5,
+        "397085f2-cf27-4909-a20d-1865ce999a6c": 59.0,
+        "25766350-cfb8-4b69-b1ec-96b704d815ed": 107.0
+      },
+      "seer_checks": [
+        {
+          "checked_player": "25766350-cfb8-4b69-b1ec-96b704d815ed",
+          "is_werewolf": true
+        },
+        {
+          "checked_player": "efc087fb-c0ff-490f-bab2-79392bec8563",
+          "is_werewolf": false
+        }
+      ],
+      "seer_found_werewolf": true,
+      "werewolf_kills": 2,
+      "summary_text": "Game complete.\n- Winner: werewolves\n- Rounds played: 2\n- Werewolf kills: 2\n- Seer found werewolf: True\n"
+    }
+  ]
+}
