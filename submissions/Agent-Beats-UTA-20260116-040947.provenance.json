@@ -1,0 +1,17 @@
+{
+  "image_digests": {
+    "green-agent": "ghcr.io/agent-beats-uta/werewolf-arena-green-agent-game-orchestrator@sha256:fd2dff28211ab502c4d2b39cdccdac776f7e2a30b9f21757969f839dca261cbd",
+    "participant": "ghcr.io/agent-beats-uta/werewolf-arena-purple-agent@sha256:2e719f7087ba6dd30360aeb785cdf300096182d5ad92effa3a97876f678053ce",
+    "agentbeats-client": "ghcr.io/agentbeats/agentbeats-client@sha256:13dfe3ef4e583a80e7ce2fe3becd0ce3b879841368a7f4fa40b6ebbabeeb014e"
+  },
+  "timestamp": "2026-01-16T04:09:47Z",
+  "github_actions": {
+    "run_url": "https://github.com/Agent-Beats-UTA/werewolf-arena-leaderboard/actions/runs/21055239625",
+    "run_logs_url": "https://api.github.com/repos/Agent-Beats-UTA/werewolf-arena-leaderboard/actions/runs/21055239625/logs",
+    "ref": "refs/heads/test-run-3",
+    "sha": "24c21d098eb11455d46ed36474b3c9bb7e9382bd",
+    "repository_url": "https://github.com/Agent-Beats-UTA/werewolf-arena-leaderboard",
+    "workflow_ref": "Agent-Beats-UTA/werewolf-arena-leaderboard/.github/workflows/run-scenario.yml@refs/heads/test-run-3",
+    "workflow_sha": "24c21d098eb11455d46ed36474b3c9bb7e9382bd"
+  }
+}
