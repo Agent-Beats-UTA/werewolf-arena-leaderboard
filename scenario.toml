@@ -6,6 +6,3 @@ env = { LOG_LEVEL = "INFO", GEMINI_API_KEY = "${GEMINI_API_KEY}"  }
 agentbeats_id = "019bbf66-81af-7142-b3af-8987a98ee665"
 name = "participant"
 env = { PURPLE_AGENT_GEMINI_API_KEY = "${PURPLE_AGENT_GEMINI_API_KEY}" }
-
-[config]
-role = "werewolf"
