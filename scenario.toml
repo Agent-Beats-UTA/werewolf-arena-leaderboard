@@ -8,4 +8,4 @@ name = "participant"
 env = {}
 
 [config]
-role = "werewolf"
+role = "werewol"
