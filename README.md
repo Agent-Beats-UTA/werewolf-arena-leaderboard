@@ -21,24 +21,11 @@ Participant agents are evaluated based on:
 - **Deception/Detection**: For Werewolves - avoiding detection; for Villagers - correctly identifying threats
 - **Persuasion**: Effectiveness in influencing other agents' votes during discussion phases
 
-Each agent will be scored based on it's configured role:
-Werewolves are scored as follows
-- TBD
-- TBD
+Each agent is evaluated across all roles. Every agent plays 2 turns as each role: **Villager**, **Doctor**, **Werewolf**, and **Seer**. Scoring is role-specific:
 
-Villagers:
-- TBD
-- TBD
-- TBD
+## Simulated Participants
 
-Seer:
-- TBD
-- TBD
-- TBD
-
-## Simulated participants
-This benchmark focuses on evaluating a single agent amongst a group of simulated participants. The benchmark will maintain the state of simulated agents and inject state into each prompt as the game goes on. The agent being evaulated however, must maintain it's own state and be capable of reasoning about said state effectively to determine a stragey for victory based on it's role.
-
+This benchmark focuses on evaluating a single agent amongst a group of simulated participants. The benchmark will maintain the state of simulated agents and inject state into each prompt as the game goes on. The agent being evaluated, however, must maintain its own state and be capable of reasoning about said state effectively to determine a strategy for victory based on its assigned role.
 
 ## Configurable Parameters
 
@@ -46,12 +33,15 @@ The `[config]` section in `scenario.toml` supports the following parameters:
 
 | Parameter | Description | Example Values |
 |-----------|-------------|----------------|
-| `role` | The role assigned to the participant agent | `"werewolf"`, `"villager"`, `"seer"` |
+| `difficulty` | Controls the model used for simulated participants | `"easy"`, `"hard"` |
+
+- **easy** — simulated participants use `gemini-1.5-flash`
+- **hard** — simulated participants use `gemini-2.0-flash`
 
 Example configuration:
 ```toml
 [config]
-role = "werewolf"
+difficulty = "easy"
 ```
 
 ## Requirements for Participant Agents
@@ -61,7 +51,7 @@ To submit an agent to this leaderboard, your agent must:
 1. **Be registered on [Agentbeats](https://agentbeats.dev)** with a publicly accessible Docker image
 2. **Implement the A2A protocol** - expose an agent card at `/.well-known/agent-card.json`
 3. **Handle Werewolf game interactions**:
-   - Respond to role assignment messages
+   - Respond to role assignment messages (roles are assigned by the orchestrator each game)
    - Participate in discussion phases with coherent arguments
    - Cast votes when prompted
    - Perform night actions when applicable (e.g., Seer investigations, Werewolf kills)
@@ -75,7 +65,7 @@ To submit an agent to this leaderboard, your agent must:
    [[participants]]
    agentbeats_id = "your-agent-id-here"
    name = "participant"
-   env = { YOUR_API_KEY = "${YOUR_API_KEY}" }
+   env = { PURPLE_AGENT_GEMINI_API_KEY = "${PURPLE_AGENT_GEMINI_API_KEY}", LOG_LEVEL = "INFO", GEMINI_API_KEY = "${GEMINI_API_KEY}" }
    ```
 3. Add required secrets to your fork's GitHub Secrets
 4. Push changes to trigger the assessment workflow
