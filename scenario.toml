@@ -9,4 +9,4 @@ env = { PURPLE_AGENT_GEMINI_API_KEY = "${PURPLE_AGENT_GEMINI_API_KEY}", LOG_LEVE
 
 [config]
 # 'easy' or 'hard'
-difficulty = "easy"
+difficulty = "easy" 
