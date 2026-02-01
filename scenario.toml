@@ -8,4 +8,5 @@ name = "participant"
 env = { PURPLE_AGENT_GEMINI_API_KEY = "${PURPLE_AGENT_GEMINI_API_KEY}", LOG_LEVEL = "INFO", GEMINI_API_KEY = "${GEMINI_API_KEY}"  }
 
 [config]
-role = "werewolf"
+# 'easy' or 'hard'
+difficulty = "easy"
