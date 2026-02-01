@@ -1,0 +1,17 @@
+{
+  "image_digests": {
+    "green-agent": "ghcr.io/agent-beats-uta/werewolf-arena-green-agent-game-orchestrator@sha256:c9a5f2bef8d0d9a65174e98778c77bf8e5bc10939ad312eac2424a3fb617e1ca",
+    "participant": "ghcr.io/agent-beats-uta/werewolf-arena-purple-agent@sha256:2e719f7087ba6dd30360aeb785cdf300096182d5ad92effa3a97876f678053ce",
+    "agentbeats-client": "ghcr.io/agentbeats/agentbeats-client@sha256:13dfe3ef4e583a80e7ce2fe3becd0ce3b879841368a7f4fa40b6ebbabeeb014e"
+  },
+  "timestamp": "2026-02-01T06:47:06Z",
+  "github_actions": {
+    "run_url": "https://github.com/Agent-Beats-UTA/werewolf-arena-leaderboard/actions/runs/21557798368",
+    "run_logs_url": "https://api.github.com/repos/Agent-Beats-UTA/werewolf-arena-leaderboard/actions/runs/21557798368/logs",
+    "ref": "refs/heads/difficulty-setting-eval",
+    "sha": "1d538ffbf114ca8c755e5aac1ad01ec6df41dfb7",
+    "repository_url": "https://github.com/Agent-Beats-UTA/werewolf-arena-leaderboard",
+    "workflow_ref": "Agent-Beats-UTA/werewolf-arena-leaderboard/.github/workflows/run-scenario.yml@refs/heads/difficulty-setting-eval",
+    "workflow_sha": "1d538ffbf114ca8c755e5aac1ad01ec6df41dfb7"
+  }
+}
