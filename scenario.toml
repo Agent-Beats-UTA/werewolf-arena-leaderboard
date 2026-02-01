@@ -4,9 +4,9 @@ image = "ghcr.io/agent-beats-uta/werewolf-arena-game-orchestrator:latest"
 env = { API_KEY = "${GITHUB_SECRET_NAME}", LOG_LEVEL = "INFO", GEMINI_API_KEY = "${GEMINI_API_KEY}"  }
 
 [[participants]]
-agentbeats_id = ""
+agentbeats_id = "019bbf66-81af-7142-b3af-8987a98ee665"
 name = "participant"
-env = {}
+env = { API_KEY = "${GITHUB_SECRET_NAME}", LOG_LEVEL = "INFO", GEMINI_API_KEY = "${GEMINI_API_KEY}"  }
 
 [config]
 role = "werewolf"
